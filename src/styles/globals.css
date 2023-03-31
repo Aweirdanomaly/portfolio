@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purple: #9333ea;
+  --sp: #d1a0f2;
+  --red: #ff0000;
+  --text-color: #31a6ff;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]
+    text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7ABBA]/40
+    focus:text-ThemeColor hover:border-ThemeColor opacity-40;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway];
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+  }
+
+  .myImage path {
+    fill: var(--text-color);
+  }
+}
+
+@layer bar {
+  @font-face {
+    font-family: "Waterfall";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/waterfall/v3/MCoRzAfo293fACdFKcwo3bv9.woff2)
+      format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+  }
+}
