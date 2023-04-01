@@ -24,6 +24,8 @@ import oml from "../../public/ocaml.png"
 import sel from "../../public/selenium.png"
 import fl from "../../public/flask.png"
 import ocv from "../../public/openCV.webp"
+import np from "../../public/numpy.png"
+import pd from "../../public/pandas.png"
 
 type Props = {};
 
@@ -80,8 +82,8 @@ export default function Skills({}:Props) {
         
         <Skill Left={false} img={redis} text="Redis" />
         <Skill Left={true} img={ocv} text="OpenCV" />
-        
-
+        <Skill Left={false} img={np} text="Numpy" />
+        <Skill Left={true} img={pd} text="Pandas" />
 
           </div>
     </motion.div>

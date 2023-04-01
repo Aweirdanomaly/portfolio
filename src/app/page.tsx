@@ -7,6 +7,7 @@ import Showcase from "../components/Showcase"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
 import ParticleBG from "@/components/ParticleBG";
+import About from "@/components/About"
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
         </section>
 
       <section id="about" className="snap-center">
-        About me
+        <About/>
       </section>
 
       <section id="skills" className="snap-start">

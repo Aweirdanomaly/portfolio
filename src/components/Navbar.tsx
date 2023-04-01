@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import "../styles/globals.css"
+import logo from "../../public/logo.png"
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -14,7 +15,8 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
               <Link href="/">
-                <h2 className="text-2xl font-bold text-ThemeColor ">LOGO</h2>
+                {/* <Image src={logo} width={50} height={50} alt="brand" /> */}
+                <h2 className="text-2xl font-bold text-ThemeColor ">Home</h2>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
