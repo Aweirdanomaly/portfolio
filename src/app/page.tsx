@@ -1,12 +1,11 @@
 
 import "../styles/globals.css"
-import Link from 'next/link';
 import Navbar from "../components/Navbar"
 import Main from "../components/Main"
 import Showcase from "../components/Showcase"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
-import ParticleBG from "@/components/ParticleBG";
+// import ParticleBG from "@/components/ParticleBG";
 import About from "@/components/About"
 
 

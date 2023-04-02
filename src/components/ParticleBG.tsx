@@ -4,8 +4,11 @@ import config from "./ParticleConfigs/particleConfig"
 import React from 'react'
 
 export default function ParticleBG() {
-  return (
-    <Particles params={config} />
+  return (<>
+    Under construction
+    {/* <Particles params={config}/> */}
+      
+      </>
   )
 }
 

@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
-import selfie from "../../public/a1.jpg"
-import testImg from '../../public/kirbo.jpg';
+
 import s from '../../public/p.png';
 import { motion} from "framer-motion"
 
@@ -23,9 +22,9 @@ export default function About({ }: Props) {
                       }}
                       whileInView={{opacity: 1, x: 0 }}
                       viewport={{ once: true }}
-                  src={s}
+                  src={s.src}
                 //   object-top makes it round and moves pic up
-                  className="  object-cover object-top mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] "
+                  className=" lg:w-1/2 object-cover object-top mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] "
                   />
 
               <div className='xl:w-1/2 space-y-10'>
