@@ -10,9 +10,8 @@ type Props ={}
 export default function About({ }: Props) {
   return (
       <>
-           <div className="min-h-screen py-32">
-          <div className='relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly'>
-              <h3 className='absolute top-2 uppercase tracking-[20px] text-ThemeColor text-2xl'>About Me</h3>
+          <div className='mb-40 min-h-screen relative flex flex-col items-center px-10 mx-auto text-center md:text-left md:flex-row md:flex-wrap max-w-7xl justify-evenly'>
+                  <h3 id="chunk" className='md:w-full md:text-center p-10 top-2 uppercase tracking-[20px] text-ThemeColor text-2xl sm: mb-10 '>About Me</h3>
               
               <motion.img
                       initial={{
@@ -26,11 +25,11 @@ export default function About({ }: Props) {
                       viewport={{ once: true }}
                   src={s}
                 //   object-top makes it round and moves pic up
-                  className="flex-shrink-0 object-cover object-top w-56 h-56 -mb-20 rounded-full md:mb-5 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px] "
+                  className="  object-cover object-top mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] "
                   />
 
-              <div className='px-10 mb-0 space-y-10 md:px-10'>
-                  <h4 className='text-4xl font-semibold'>A Little Background</h4>
+              <div className='xl:w-1/2 space-y-10'>
+                <h4 className='text-4xl font-semibold'>A Little Background</h4>
                   <p className='text-sm'>
                       Hello! My name is Carlos, I'm from Brownsville, TX and last year (2022) I graduated from Boston University with a Bachelor's degree in Physics and Computer Science, mainly specializing in cybersecurity and quantum computing. I was able to complete my degree in just three years, which required a lot of hard work and dedication.
                       <br></br>
@@ -42,8 +41,7 @@ Thank you for taking the time to visit my online portfolio. If you have any ques
                       </p>
               </div>
         </div>
-      
-      </div>
+
       </>
   )
 }

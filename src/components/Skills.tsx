@@ -26,6 +26,12 @@ import fl from "../../public/flask.png"
 import ocv from "../../public/openCV.webp"
 import np from "../../public/numpy.png"
 import pd from "../../public/pandas.png"
+import bs from "../../public/bootstrap.svg"
+import b from "../../public/bash.png"
+import gcp from "../../public/gcp.png"
+import aws from "../../public/aws.webp"
+
+
 
 type Props = {};
 
@@ -85,6 +91,10 @@ export default function Skills({}:Props) {
         <Skill Left={false} img={np} text="Numpy" />
         <Skill Left={true} img={pd} text="Pandas" />
 
+        <Skill Left={false} img={bs} text="Bootstrap" />
+        <Skill Left={true} img={b} text="Bash" />
+        <Skill Left={false} img={gcp} text="Google Cloud" />
+        <Skill Left={true} img={aws} text="Amazon Web Services" />
           </div>
     </motion.div>
   )
