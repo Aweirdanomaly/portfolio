@@ -45,12 +45,12 @@ export default function Main() {
                 <FaGithub />
               </div>
             </a>
-            <Link href='/#contact'>
+            <a href='/#contact'>
               <div className='p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-110'>
                 <AiOutlineMail />
               </div>
-            </Link>
-            <Link href='/resume'>
+            </a>
+            <Link href='../../Resume.pdf' download>
               <div className='p-6 duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-110'>
                 <BsFillPersonLinesFill />
               </div>
