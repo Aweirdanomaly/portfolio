@@ -1,10 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import testImg from '../../public/kirbo.jpg';
-import dancing from "../../public/dancing.gif";
-import sql from "../../public/sql.mp4"
-import ns from "../../public/wd.gif"
+import dancing from "/dancing.gif";
+
 
 
 import ProjectItem from './Project';
@@ -28,7 +25,7 @@ const Projects = () => {
 
                     <ProjectItem
             title='Pico-8 Carts'
-            backgroundImg={dancing}
+            backgroundImg={"/dancing.gif"}
             projectUrl='https://github.com/Aweirdanomaly/Pico-8-carts'
             tech='Lua Pico8'
 

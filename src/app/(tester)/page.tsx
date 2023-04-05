@@ -1,5 +1,6 @@
 "use client"
 
+import next from 'next'
 // import vid from "public/sql.mp4"
 
 
@@ -14,16 +15,21 @@ export default function Home() {
         <br></br>
         <br></br>
         <br></br>
+
+
+
             <div>
-      <h2>NextJs VideoPlayer - Poo</h2>
-            {/* <ReactPlayer url={"https://www.youtube.com/watch?v=E5G0ZP1Kr0Q"} playing loop controls />
-            poo1 */}
+
+            <ReactPlayer url={"https://www.youtube.com/watch?v=E5G0ZP1Kr0Q"} playing loop controls />
+            poo1
             
-            {/* <ReactPlayer url={"./sql.mp4"} playing loop /> */}
             <video className='VideoTag' autoPlay muted>
             <source src={"/videos/sql.mp4"} type='video/mp4'/>
             </video>
-    </div>
+
+
+        </div>
+        
 
         
 
