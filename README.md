@@ -1,4 +1,6 @@
-This is the repo for the portfolio website. I'll add a README later...(probably)
+This is the repo for my portfolio website. I'll type a more formal README later but for now you can see the project in action right here:
+
+[Live Portfolio](https://aweirdanomaly.com)
 
 <!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

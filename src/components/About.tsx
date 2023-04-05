@@ -1,7 +1,5 @@
 "use client";
 import React from 'react'
-
-import s from '../../public/p.png';
 import { motion} from "framer-motion"
 
 type Props ={}
@@ -22,7 +20,7 @@ export default function About({ }: Props) {
                       }}
                       whileInView={{opacity: 1, x: 0 }}
                       viewport={{ once: true }}
-                  src={s.src}
+                  src={'/p.png'}
                 //   object-top makes it round and moves pic up
                   className=" lg:w-1/2 object-cover object-top mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] "
                   />

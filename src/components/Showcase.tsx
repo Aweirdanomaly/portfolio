@@ -3,15 +3,14 @@ import Link from 'next/link';
 import React from 'react';
 import testImg from '../../public/kirbo.jpg';
 import dancing from "../../public/dancing.gif";
-import sql from "../../public/sql.gif"
+import sql from "../../public/sql.mp4"
 import ns from "../../public/wd.gif"
-
-
 
 
 import ProjectItem from './Project';
 
 const Projects = () => {
+
   return (
     <div id='projects' className='relative w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
@@ -22,7 +21,7 @@ const Projects = () => {
         <div className='grid gap-8 md:grid-cols-3'>
           <ProjectItem
             title='SQL Table Editor'
-            backgroundImg={sql}
+            backgroundImg={"/videos/sqluse.mp4"}
             projectUrl='https://github.com/Aweirdanomaly/sql-table-editor'
             tech='Python Tkinter Qt5 SQL'
           />
@@ -36,7 +35,7 @@ const Projects = () => {
           />
           <ProjectItem
             title='Nutri-Snap'
-            backgroundImg={ns}
+            backgroundImg={"/videos/nutriSnap.mp4"}
             projectUrl='https://devpost.com/software/nutrisnap-the-nutritional-helper'
             tech='ReactNative Expo Tensorflow Flask'
 

@@ -3,7 +3,7 @@ import React from 'react'
 import { motion} from "framer-motion"
 import Skill from "./Skill"
 import python from "../../public/python.png"
-import jjs from "../../public/JS.jpg"
+import jjs from "../../public/typescript.jpg"
 import rust from "../../public/rust.png"
 import sql from "../../public/sql2.jpg"
 import cpp from "../../public/cpp.png"
@@ -63,10 +63,10 @@ export default function Skills({}:Props) {
       <div className="grid grid-cols-2 gap-5 px-20 top-60 py-100 md:grid-cols-4 lg:grid-cols-4">
 
         <Skill Left={false}  img={python} text="Python"/>
-        <Skill Left={true} img={jjs} text="Javascript"/>
+        <Skill Left={true} img={jjs} text="Typescript"/>
         <Skill Left={false} img={rust} text="Rust"/>
         <Skill Left={true} img={sql} text="SQL"/>
-        <Skill Left={false} img={cpp} text="C&C++"/>
+        <Skill Left={false} img={cpp} text="C and C++"/>
 
         <Skill Left={true} img={lua} text="Lua" />
         <Skill Left={false} img={tw} text="Tailwind" />

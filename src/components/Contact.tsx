@@ -31,6 +31,7 @@ export default function Contact({ }: Props) {
 
             <div className='absolute flex flex-col space-y-10 top-40'>
                 <h4 className='text-4xl font-semibold text-center '>
+                    I've got just what you need.<br></br>
                     <span className='underline decoration-ThemeColor'>Let's Talk</span>
                 </h4>
 
