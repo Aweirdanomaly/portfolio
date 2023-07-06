@@ -42,11 +42,8 @@ export default function Skills({}:Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
   
-
       className="flex flex-col text-center md:text-left xl:flex-row max-w-[2000px]
-         xl:px-10 min-h-0 justify-center xl:space-y-0 mx-auto items-center flex-1"
-    
-      
+         xl:px-10 min-h-0 justify-center xl:space-y-0 mx-auto items-center flex-1"    
     >
           
       

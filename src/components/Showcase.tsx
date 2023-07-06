@@ -16,6 +16,8 @@ const Projects = () => {
         </h3>
         <h2 className='py-5 uppercase tracking-[3px] text-gray-500 text-sm'>A few Things I've Built</h2>
         <div className='grid gap-8 md:grid-cols-3'>
+
+
           <ProjectItem
             title='SQL Table Editor'
             backgroundImg={"/videos/sqluse.mp4"}
@@ -37,6 +39,12 @@ const Projects = () => {
             tech='ReactNative Expo Tensorflow Flask'
 
           />
+
+          <ProjectItem
+            title="ezML FrontEnd"
+            backgroundImg={"/videos/ezml.webm"}
+            projectUrl="https://ezml.io"
+            tech="NextJS Tailwind" />
           {/* <ProjectItem
             title='ML Handwritten Digit Recognizer'
             backgroundImg={testImg}

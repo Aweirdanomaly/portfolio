@@ -5,7 +5,7 @@ import Main from "../components/Main"
 import Showcase from "../components/Showcase"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
-// import ParticleBG from "@/components/ParticleBG";
+import ParticleBG from "@/components/ParticleBG";
 import About from "@/components/About"
 
 
@@ -23,24 +23,26 @@ export default function Home() {
         </section>
 
             
-      <section id="main" className="snap-start">
+      <section id="main" className="snap-start m-[100px]">
           <Main />
         </section>
 
-      <section id="about" className="snap-center">
+      <section id="projects" className="snap-start m-[100px]">
+              <Showcase />
+      </section>
+
+      <section id="about" className="snap-center m-[100px]">
         <About/>
       </section>
 
-      <section id="skills" className="snap-start">
+      <section id="skills" className="snap-start m-[100px]">
               <Skills />  
       </section>
             
-      <section id="projects" className="snap-start">
-              <Showcase />
-      </section>
+
               
           
-      <section id="contact" className=" snap-start">
+      <section id="contact" className=" snap-start m-[100px]">
         <Contact />
       </section>
 

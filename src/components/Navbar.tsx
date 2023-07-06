@@ -7,6 +7,7 @@ import logo from "../../public/logo.png"
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+
   return (
     <div>
       <nav className="fixed top-0 left-0 right-0 z-10 w-full bg-black">
@@ -18,6 +19,8 @@ function NavBar() {
                 {/* <Image src={logo} width={50} height={50} alt="brand" /> */}
                 <h2 className="text-2xl font-bold text-ThemeColor ">Home</h2>
               </Link>
+
+
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
@@ -37,9 +40,15 @@ function NavBar() {
                   )}
                 </button>
               </div>
+
+              
             </div>
           </div>
           <div>
+
+
+
+            
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
@@ -50,7 +59,7 @@ function NavBar() {
                   {/* <Link href="#about" onClick={() => setNavbar(!navbar)}>
                     About
                   </Link> */}
-                  <a href="#about" onClick={() => setNavbar(!navbar)}>About</a>
+                  <a href="/Resume.pdf" onClick={() => setNavbar(!navbar)} download>Resume</a>
                 </li>
                 <li className="px-6 py-2 pb-6 text-xl text-center text-white border-b-2 border-ThemeColor md:border-b-0 hover:bg-ThemeColor md:hover:text-ThemeColor md:hover:bg-transparent">
                   {/* <Link href="#skills" onClick={() => setNavbar(!navbar)}>
