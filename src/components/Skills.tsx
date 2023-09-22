@@ -57,7 +57,7 @@ export default function Skills({}:Props) {
         </h3>
       </div>
       
-      <div className="grid grid-cols-2 gap-5 px-20 top-60 py-100 md:grid-cols-4 lg:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5   py-100 md:grid-cols-4 ">
 
         <Skill Left={false}  img={python} text="Python"/>
         <Skill Left={true} img={jjs} text="Typescript"/>

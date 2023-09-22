@@ -11,10 +11,10 @@ const Projects = () => {
   return (
     <div id='projects' className='relative w-full'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <h3 className='uppercase text-ThemeColor relative tracking-[20px] text-2xl'>
+        <h3 className='flex max-sm:justify-center max-sm:items-center uppercase text-ThemeColor tracking-[10px] relative lg:tracking-[20px] text-2xl'>
           Projects
         </h3>
-        <h2 className='py-5 uppercase tracking-[3px] text-gray-500 text-sm'>A few Things I've Built</h2>
+        <h2 className='flex max-sm:justify-center max-sm:items-center py-5 uppercase tracking-[3px] text-gray-500 text-sm'>A few Things I've Built</h2>
         <div className='grid gap-8 md:grid-cols-3'>
 
 

@@ -16,12 +16,6 @@ export default function Home() {
     <div className="h-screen overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-ThemeColor ">
       
 
-    
-
-      <section>
-        <Navbar />
-        </section>
-
             
       <section id="main" className="snap-start m-[100px]">
           <Main />
@@ -38,8 +32,6 @@ export default function Home() {
       <section id="skills" className="snap-start m-[100px]">
               <Skills />  
       </section>
-            
-
               
           
       <section id="contact" className=" snap-start m-[100px]">
@@ -48,9 +40,6 @@ export default function Home() {
 
             
       
-        <footer>
-        
-      </footer>
       
 
     </div>

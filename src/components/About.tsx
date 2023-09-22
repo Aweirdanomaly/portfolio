@@ -4,9 +4,7 @@ import { motion} from "framer-motion"
 
 type Props ={}
 
-function bioInfo(info:string ) {
-  return (<li className='m-4'>{info}</li>)
-}
+
 
 var info = [
   "Born in Brownsville, TX",
@@ -23,7 +21,7 @@ export default function About({ }: Props) {
       <>
           <div className='relative flex flex-col items-center min-h-screen px-10 mx-auto mb-40 text-center md:text-left md:flex-row md:flex-wrap max-w-7xl justify-evenly'>
                   <h3 id="chunk" className='md:w-full md:text-center p-10 top-2 uppercase tracking-[20px] text-ThemeColor text-2xl sm: mb-10 '>About Me</h3>
-        <div className='md:flex md:flex-row '>
+        <div className='lg:flex lg:flex-row '>
           
               <motion.img
                       initial={{
@@ -37,7 +35,7 @@ export default function About({ }: Props) {
                       viewport={{ once: true }}
                   src={'/p.png'}
                 //   object-top makes it round and moves pic up
-                  className=" lg:w-1/2 object-cover object-top mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] md:mr-4 "
+                  className=" lg:w-1/2 object-cover  mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] md:mr-4 "
                   />
 
               <div className='space-y-10 lg:w-1/2'>
@@ -46,7 +44,7 @@ export default function About({ }: Props) {
                       {/* Hello! My name is Carlos, I'm from Brownsville, TX and last year (2022) I graduated from Boston University with a Bachelor's degree in Physics and Computer Science, mainly specializing in cybersecurity and quantum computing. I was able to complete my degree in just three years, which required a lot of hard work and dedication. */}
               
   <ul className='xl:list-disc'>
-    {info.map((x)=>(bioInfo(x)))}
+    {info.map((x, idx)=>(<li className='m-4' key={idx}>{x}</li>))}
   </ul>
 
             
