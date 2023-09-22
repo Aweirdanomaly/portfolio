@@ -10,6 +10,7 @@
 /coverage
 (tester)/
 [tester]/
+*/public/kirbo.jpg
 
 # next.js
 /.next/
