@@ -1,6 +1,5 @@
 import React from 'react';
 import testImg from '../../public/kirbo.jpg';
-import dancing from "/dancing.gif";
 
 
 
@@ -20,21 +19,21 @@ const Projects = () => {
 
           <ProjectItem
             title='SQL Table Editor'
-            backgroundImg={"/videos/sqluse.mp4"}
+            backgroundImg={"/videos/sqluse.webm"}
             projectUrl='https://github.com/Aweirdanomaly/sql-table-editor'
             tech='Python Tkinter Qt5 SQL'
           />
 
                     <ProjectItem
             title='Pico-8 Carts'
-            backgroundImg={"/dancing.gif"}
+            backgroundImg={"/videos/dancing.webm"}
             projectUrl='https://github.com/Aweirdanomaly/Pico-8-carts'
             tech='Lua Pico8'
 
           />
           <ProjectItem
             title='Nutri-Snap'
-            backgroundImg={"/videos/nutriSnap.mp4"}
+            backgroundImg={"/videos/nutriSnap.webm"}
             projectUrl='https://devpost.com/software/nutrisnap-the-nutritional-helper'
             tech='ReactNative Expo Tensorflow Flask'
 
