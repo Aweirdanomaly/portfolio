@@ -6,7 +6,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head />
+      <head>
+        <title>Carlos's Portfolio (⌐■_■)</title>
+        </head>
       <body>
         <main>
           <Navbar/>

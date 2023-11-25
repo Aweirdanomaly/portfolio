@@ -8,8 +8,8 @@
 
 # testing
 /coverage
-(tester)/
-[tester]/
+**/tester/*
+**/garbo/*
 */public/kirbo.jpg
 
 # next.js

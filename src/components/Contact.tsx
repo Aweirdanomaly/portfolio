@@ -50,11 +50,11 @@ export default function Contact({ }: Props) {
 
                 
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col px-10 mx-auto space-y-2 w-fit '>
-                    <div className='space-y-2 lg:space-x-2 md:space-x-2'>
-                        <input {...register('name')} placeholder="Name" className='contactInput max-md:w-full' type="text"></input>
-                        <input {...register('email')} placeholder="Email" className='contactInput max-md:w-full' type="email"></input>
+                    <div className='space-y-2 lg:space-x-2 md:space-x-2 text-white'>
+                        <input {...register('name')} placeholder="Name" className='contactInput max-md:w-full text-white' type="text"></input>
+                        <input {...register('email')} placeholder="Email" className='contactInput max-md:w-full text-white' type="email"></input>
                     </div>
-                    <input {...register('subject')} placeholder="Subject" className='contactInput' type="text"></input>
+                    <input {...register('subject')} placeholder="Subject" className='contactInput text-white' type="text"></input>
 
                     <textarea {...register('message')} placeholder="Message" className='contactInput'/>
                     <button className='px-10 py-5 text-lg font-bold text-black rounded-md bg-ThemeColor'>Submit</button>

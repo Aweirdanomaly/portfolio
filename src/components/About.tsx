@@ -34,6 +34,7 @@ export default function About({ }: Props) {
                       whileInView={{opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                   src={'/p.png'}
+                  alt='profile pic'
                 //   object-top makes it round and moves pic up
                   className=" lg:w-1/2 object-cover  mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] md:mr-4 "
                   />

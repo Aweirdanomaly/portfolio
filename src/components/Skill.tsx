@@ -1,20 +1,20 @@
 import React from 'react'
 import { motion } from "framer-motion"
 import testImg from '../../public/kirbo.jpg';
-import { StaticImageData } from 'next/image';
+import  Image  from 'next/image';
 
 type Props = {
     Left?: boolean
-    img: StaticImageData
-    text?: string
+    img: string
+    text: string
 
 
 };
 
 export default function Skill({Left, img, text}: Props) {
   return (<>
-      <div className="relative flex cursor-pointer group">
-          <motion.img
+      <div className="relative flex cursor-pointer group ">
+          <motion.div
               initial={{
                   x: Left ? -100 : 100,
                   opacity: 0
@@ -22,9 +22,16 @@ export default function Skill({Left, img, text}: Props) {
               transition={{ duration: 0.5 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport = {{once: true}}
-              src={img.src}
-              className="w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale"
-          />
+              className=" overflow-hidden relative w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale"
+          >
+            <Image
+            
+            src={img}
+            fill
+            sizes="100%"
+            alt={text}
+            />
+          </motion.div>
       
 
 
