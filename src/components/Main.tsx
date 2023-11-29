@@ -25,6 +25,7 @@ export default function Main() {
 							href="https://www.linkedin.com/in/carlos-lopez-98aa4b1a9/"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="See my LinkedIn"
 						>
 							<div className="p-3 sm:p-4 bg-[#413F3F] duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-125">
 								<FaLinkedinIn size={30} />
@@ -34,17 +35,18 @@ export default function Main() {
 							href="https://github.com/Aweirdanomaly"
 							target="_blank"
 							rel="noreferrer"
+							aria-label="Check out my Github"
 						>
 							<div className="p-3 sm:p-4 bg-[#413F3F] duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-125">
 								<FaGithub size={30}/>
 							</div>
 						</a>
-						<a href="/#contact">
+						<a href="/#contact" aria-label="Send me an email at the bottom of this page">
 							<div className="p-3 sm:p-4 bg-[#413F3F] duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-125">
 								<AiOutlineMail size={30} />
 							</div>
 						</a>
-						<a href="/Resume.pdf" download>
+						<a href="/Resume.pdf" aria-label="Download my Resume" download>
 							<div className="p-3 sm:p-4 bg-[#413F3F] duration-300 ease-in rounded-full shadow-lg cursor-pointer shadow-ThemeColor hover:scale-125">
 								<BsFillPersonLinesFill size={30} />
 							</div>

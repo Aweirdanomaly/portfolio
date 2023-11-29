@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar"
+import Head from "next/head"
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +9,13 @@ export default function RootLayout({
     <html>
       <head>
         <title>Carlos's Portfolio (⌐■_■)</title>
+
+        <meta
+  name="description"
+  content="Check out Carlos's projects, socials, and even play some games"
+/>
         </head>
+
       <body>
         <main>
           <Navbar/>
