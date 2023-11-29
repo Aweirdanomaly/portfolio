@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ThemeColor: 'var(--text-color)',
+        "ThemeColor": 'var(--text-color)',
+        "tcc" : "#544332"
       }
     },
   },

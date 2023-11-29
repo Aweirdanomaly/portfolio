@@ -27,6 +27,7 @@ export default function Home() {
     <div className="h-screen overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-ThemeColor bg-[#121212] text-white ">
       
 
+
             
       <section id="main" className="snap-start m-[100px]">
           <Main />
@@ -41,20 +42,20 @@ export default function Home() {
     />
     </div> */}
 
-      <section id="projects" className="snap-start m-[100px]">
+      <section id="projects" className="snap-start m-[60px] sm:m-[100px]">
               <Showcase />
       </section>
 
-      <section id="about" className="snap-center m-[100px]">
+      <section id="about" className="snap-center m-[60px] sm:m-[100px]">
         <About/>
       </section>
 
-      <section id="skills" className="snap-start m-[100px]">
+      <section id="skills" className="snap-start m-[60px] sm:m-[100px]">
               <Skills />  
       </section>
               
           
-      <section id="contact" className=" snap-start m-[100px]">
+      <section id="contact" className=" snap-start m-[60px] sm:m-[100px]">
         <Contact />
       </section>
 

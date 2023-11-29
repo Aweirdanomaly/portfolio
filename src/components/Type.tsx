@@ -3,23 +3,27 @@ import React, { useEffect, useRef } from 'react';
 import Typewriter from 'typewriter-effect';
 
 export default function Type() {
-  const typewriterRef = useRef(null);
 
-  useEffect(() => {
-    if (typewriterRef.current) {
-      typewriterRef.current.start();
-    }
-  }, []);
+
+
 
   return (
     <div>
+      {/* <Typewriter
+            words={['Full-Stack Developer', 'Data Scientist', 'Marketing Manager', 'Lifelong Learner']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            onLoopDone={handleDone}
+            onType={handleType}
+          /> */}
       <Typewriter
-        onInit={(typewriter) => {
-          typewriterRef.current = typewriter;
-        }}
         options={{
-          strings: ['Full-Stack Developer', 'Data Scientist', 'Marketing Manager', 'Lifelong Learner'],
-          autoStart: false, // Disable autoStart here
+          strings: ['Full-Stack Developer', 'Data Scientist', 'Software Engineer', 'Lifelong Learner'],
+          autoStart: true, // Disable autoStart here
           loop: true,
         }}
       />

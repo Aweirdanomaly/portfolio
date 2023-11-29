@@ -62,12 +62,12 @@ export default function Skills({}:Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
   
-      className="flex flex-col text-center md:text-left xl:flex-row max-w-[2000px]
-         xl:px-10 min-h-0 justify-center xl:space-y-0 mx-auto items-center flex-1"    
+      className="flex flex-col text-center md:text-left 
+         xl:px-10 min-h-0 justify-center xl:space-y-0  items-center "    
     >
           
       
-      <div className='p-5 text-center'>
+      <div className='p-5 text-center mb-10'>
       <h3 className=" relative uppercase tracking-[20px] text-ThemeColor text-2xl">
               Skills
           </h3>
@@ -77,7 +77,7 @@ export default function Skills({}:Props) {
         </h3>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5   py-100 md:grid-cols-4 ">
+      <div className="grid grid-cols-4 gap-5  w-full  justify-items-center">
 
         {/* <Skill Left={false} img={supportsWebP ? "/skills/python.webp": "/kirbo.jpg"} text="Python"/>
         <Skill Left={true} img={"/skills/typescript.webp"} text="Typescript"/>

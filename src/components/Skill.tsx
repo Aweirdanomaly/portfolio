@@ -13,7 +13,7 @@ type Props = {
 
 export default function Skill({Left, img, text}: Props) {
   return (<>
-      <div className="relative flex cursor-pointer group ">
+      <div className="relative flex cursor-pointer group justify-center w-min ">
           <motion.div
               initial={{
                   x: Left ? -100 : 100,
@@ -22,7 +22,7 @@ export default function Skill({Left, img, text}: Props) {
               transition={{ duration: 0.5 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport = {{once: true}}
-              className=" overflow-hidden relative w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale"
+              className=" overflow-hidden  relative w-12 h-12  sm:w-28 sm:h-28 xl:w-32 xl:h-32  transition duration-300 ease-in-out border border-gray-500 rounded-full filter group-hover:grayscale"
           >
             <Image
             
@@ -35,9 +35,9 @@ export default function Skill({Left, img, text}: Props) {
       
 
 
-       <div className="absolute z-0 w-24 h-24 transition duration-300 ease-in-out rounded-full opacity-0 group-hover:opacity-80 group-hover:bg-white md:w-28 md:h-28 xl:w-32 xl:h-32 "> 
+       <div className="absolute z-0 w-12 h-12 transition duration-300 ease-in-out rounded-full opacity-0 group-hover:opacity-80 group-hover:bg-white sm:w-28 sm:h-28 xl:w-32 xl:h-32 "> 
       <div className="flex items-center justify-center h-full">
-                  <p className="text-xl font-bold text-black opacity-100  text-center">{text}</p>
+                  <p className="text-[10px] sm:text-xl font-bold text-black opacity-100  text-center">{text}</p>
           </div>
           </div> 
           </div>
