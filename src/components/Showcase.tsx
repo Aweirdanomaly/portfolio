@@ -13,6 +13,7 @@ const Projects = () => {
 				<h2 className="flex max-sm:justify-center max-sm:items-center py-5 uppercase tracking-[3px] text-gray-500 text-sm">
 					A few Things I've Built
 				</h2>
+				
 				<div className="grid gap-8 md:grid-cols-3">
 					<ProjectItem
 						title="SQL Table Editor"

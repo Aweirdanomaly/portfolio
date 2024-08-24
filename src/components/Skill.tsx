@@ -25,7 +25,7 @@ export default function Skill({Left, img, text}: Props) {
               className=" overflow-hidden  relative w-12 h-12  sm:w-28 sm:h-28 xl:w-32 xl:h-32  transition duration-300 ease-in-out border border-gray-500 rounded-full filter group-hover:grayscale"
           >
             <Image
-            
+            unoptimized
             src={img}
             fill
             sizes="100%"

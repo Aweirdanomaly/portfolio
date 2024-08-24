@@ -3,7 +3,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Type from "../components/Type";
+import Typewriter from "../components/Type";
+
 
 export default function Main() {
 	return (
@@ -14,7 +15,8 @@ export default function Main() {
 						Howdy, I'm <span className="text-ThemeColor"> Carlos</span> A
 					</h1>
 
-					<h1 className="py-2 text-white-700">{<Type />}</h1>
+					<h1 className="py-2 text-white-700"><Typewriter
+          strings= {['Full-Stack Developer', 'Data Scientist', 'Software Engineer', 'Lifelong Learner']}/></h1>
 
 					<p className="py-4 text-white-600 sm:max-w-[70%] m-auto tracking-widest uppercase">
 						Let's build something together

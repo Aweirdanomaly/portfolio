@@ -2,7 +2,13 @@
 const nextConfig = {
 
     images: {
-        domains: ['www.gstatic.com'],
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'www.gstatic.com',
+            pathname: '**',
+          },
+        ],
       },
 }
 

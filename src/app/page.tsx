@@ -6,8 +6,6 @@ import Skills from "../components/Skills"
 import Contact from "../components/Contact"
 import ParticleBG from "@/components/ParticleBG";
 import About from "@/components/About"
-import Image from "next/image"
-import sql from "public/skills/sql.webp"
 
 import { useState, useEffect } from "react"
 
@@ -33,14 +31,7 @@ export default function Home() {
           <Main />
         </section>
 
-    {/* <div className="border-4 border-blue-500 flex justify-center items-center">
-        <Image
-      src="https://www.gstatic.com/webp/gallery/1.sm.webp"
-      width={500}
-      height={500}
-      alt="Picture of the author"
-    />
-    </div> */}
+
 
       <section id="projects" className="snap-start m-[60px] sm:m-[100px]">
               <Showcase />

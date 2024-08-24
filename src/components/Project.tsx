@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { StaticImageData } from 'next/image';
-import vid from "../../public/sql.mp4"
 
 type Props = {
     title?: string
@@ -19,12 +18,14 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }: Props) => {
 
   function vidType(file: string ) {
     if (["mp4", "webm"].includes(file.split('.').pop()!)) {
-      return (<video className=' rounded-xl group-hover:opacity-10 h-auto w-full'  autoPlay loop muted>
-      <source src={file} height="50" type='video/mp4' className='h-auto'/>
-      </video>) 
+      return (<video className=' rounded-xl group-hover:opacity-10 h-auto w-full'
+      muted
+      autoPlay
+      loop
+      playsInline src={file}/>) 
       }
     else {
-      return (<Image className='rounded-xl group-hover:opacity-10 h-auto w-full' width="80" height="80" src={file} alt='/' /> )
+      return (<Image className='rounded-xl group-hover:opacity-10 h-auto w-full' width="80" height="80" src={file} alt='/'  /> )
     }
   }
 

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
+import { FaPhone, FaEnvelopeOpen, FaDiscord } from 'react-icons/fa';
 import { useForm, SubmitHandler } from "react-hook-form";
 
 
@@ -36,15 +36,21 @@ export default function Contact({ }: Props) {
                 </h4>
 
             <div>
-                    <div className='flex items-center justify-center space-x-5'>
+                {/* phone number */}
+                    {/* <div className='flex items-center justify-center space-x-5'>
                         <FaPhone className='text-ThemeColor h-7 w-7 animate-pulse' />
                         <p className='text-2xl'>+1 (956) 509-7682</p>
-                    </div>
+                    </div> */}
 
 
                     <div className='flex items-center justify-center py-5 space-x-5'>
                         <FaEnvelopeOpen className='text-ThemeColor h-7 w-7 animate-pulse' />
                         <p className='text-2xl'>tech.lopez0@gmail.com</p>
+                    </div>
+
+                    <div className='flex items-center justify-center space-x-5'>
+                        <FaDiscord className='text-ThemeColor h-7 w-7 animate-pulse' />
+                        <p className='text-2xl'>@aweirdanomaly</p>
                     </div>
             </div>
 

@@ -54,7 +54,7 @@ export default function Typewriter({ strings, loop = true }: Props) {
   return (
     <span>
       {displayedText}
-      <span style={{ visibility: showCursor ? 'hidden': 'visible'  }}>|</span>
+      <span style={{ visibility: showCursor ? 'visible' : 'hidden' }}>|</span>
     </span>
   );
 };
