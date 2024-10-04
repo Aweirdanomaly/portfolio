@@ -41,13 +41,13 @@ const Projects = () => {
 						projectUrl="https://ezml.io"
 						tech="NextJS Tailwind"
 					/>
-					{/* <ProjectItem
-            title='ML Handwritten Digit Recognizer'
-            backgroundImg={testImg}
-            projectUrl='/twitch'
-            tech='Next JS'
+					<ProjectItem
+            title='Aeon Biomarkers Visualization'
+            backgroundImg={"/videos/biomarkers.webm"}
+            projectUrl='https://www.youtube.com/watch?v=JdxDCP5s62o'
+            tech='Preact Tailwind D3JS'
 
-          /> */}
+          />
 					{/* <ProjectItem
             title='Crypto Website'
             backgroundImg={testImg}

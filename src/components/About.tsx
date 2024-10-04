@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 type Props = {};
 
 var info = [
-	"Born in Brownsville, TX",
-	"Graduated from Boston University in 2022",
-	"Bachelor's degree in Physics and Computer Science",
-	"Specialized in cybersecurity and quantum computing",
-	"Completed degree in three years",
-	"Full of hard work and dedication",
+	"Born in Brownsville, TX 🏠" ,
+	"Graduated from Boston University in 2022 🎓",
+	"Bachelor's degree in Physics and Computer Science ⚛️💻",
+	"Specialized in cybersecurity and quantum computing 🔐🔬",
+	"Completed degree in three years ⏳🎉",
+	"Full of hard work and dedication 💪✨",
 ];
 
 export default function About({}: Props) {
@@ -40,14 +40,14 @@ export default function About({}: Props) {
 						className=" lg:w-1/2 object-cover  mb-20 rounded-full md:mb-5 md:rounded-lg md:h-95 xl:w-[500px] xl:h-[500px] md:mr-4 "
 					/>
 
-					<div className="space-y-10 lg:w-1/2">
+					<div className="flex flex-col justify-center ml-4 space-y-10 lg:w-1/2">
 						<h4 className="text-4xl font-semibold">A Little Background</h4>
 						{/* <p className='text-sm'> */}
 						{/* Hello! My name is Carlos, I'm from Brownsville, TX and last year (2022) I graduated from Boston University with a Bachelor's degree in Physics and Computer Science, mainly specializing in cybersecurity and quantum computing. I was able to complete my degree in just three years, which required a lot of hard work and dedication. */}
 
-						<ul className="xl:list-disc">
+						<ul className="xl:list-disc ">
 							{info.map((x, idx) => (
-								<li className="m-4" key={idx}>
+								<li className="my-4 lg:m-4" key={idx}>
 									{x}
 								</li>
 							))}
